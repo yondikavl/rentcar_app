@@ -50,8 +50,8 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBPglAhfo0o4dcSTbVgeVdQNx5dAyJa3J8',
-    appId: '1:198473540286:android:8cd0b25fb3eb8624d834ef',
+    apiKey: 'API KEY',
+    appId: 'APP ID',
     messagingSenderId: '961519639955',
     projectId: 'rentcar-app-fdd11',
     storageBucket: 'rentcar-app-fdd11.appspot.com',
@@ -59,7 +59,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'API_KEY',
-    appId: '1:198473540286:android:8cd0b25fb3eb8624d834ef',
+    appId: 'APP ID',
     messagingSenderId: '961519639955',
     projectId: 'rentcar_app',
     storageBucket: 'rentcar_app',
