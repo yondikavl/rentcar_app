@@ -6,7 +6,7 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 10, 44, 95),
+      backgroundColor: Color(0x2E3192),
       body: Column(
         children: [
           Expanded(
