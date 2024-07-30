@@ -1,4 +1,4 @@
-package com.example.rentcar_app
+package com.yondikavl.rentcar_app
 
 import io.flutter.embedding.android.FlutterActivity
 
