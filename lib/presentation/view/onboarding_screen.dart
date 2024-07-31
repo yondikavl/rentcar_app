@@ -6,13 +6,13 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0x2E3192),
+      backgroundColor: const Color(0xFF2E3192),
       body: Column(
         children: [
           Expanded(
             flex: 2,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage('assets/onboarding.png'),
                     fit: BoxFit.cover),
@@ -41,7 +41,7 @@ class OnboardingScreen extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 20),
                   SizedBox(
                     width: 320,
                     height: 54,
