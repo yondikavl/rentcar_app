@@ -14,15 +14,16 @@ class CarCard extends StatelessWidget {
         margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
-            color: Color(0xfff3f3f3),
-            borderRadius: BorderRadius.circular(16),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black12,
-                blurRadius: 12,
-                spreadRadius: 4,
-              )
-            ]),
+          color: Color.fromARGB(255, 232, 232, 243),
+          borderRadius: BorderRadius.circular(16),
+          // boxShadow: [
+          //   BoxShadow(
+          //     color: Colors.black12,
+          //     blurRadius: 12,
+          //     spreadRadius: 4,
+          //   )
+          // ],
+        ),
         child: Column(
           children: [
             Image.asset(

@@ -11,15 +11,17 @@ class CarListScreen extends StatelessWidget {
         fuelCapacity: 60,
         pricePerHour: 50),
     Car(
-        model: 'Fortuner GR',
-        distance: 800,
-        fuelCapacity: 60,
-        pricePerHour: 50),
+        model: 'Civic Turbo',
+        distance: 600,
+        fuelCapacity: 47,
+        pricePerHour: 40),
     Car(
-        model: 'Fortuner GR',
-        distance: 800,
-        fuelCapacity: 60,
-        pricePerHour: 50),
+        model: 'Pajero Sport',
+        distance: 750,
+        fuelCapacity: 70,
+        pricePerHour: 55),
+    Car(model: 'Alphard', distance: 500, fuelCapacity: 75, pricePerHour: 60),
+    Car(model: 'Jazz RS', distance: 650, fuelCapacity: 42, pricePerHour: 35),
   ];
 
   @override
