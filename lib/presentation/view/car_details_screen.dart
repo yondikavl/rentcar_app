@@ -29,28 +29,57 @@ class CarDetailsScreen extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          Container(
-            child: Column(
-              children: [
-                CircleAvatar(
-                  radius: 40,
-                  backgroundImage: AssetImage(
-                    'assets/user.png',
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: Color(0xFF2E3192),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 40,
+                        backgroundImage: AssetImage(
+                          'assets/user.png',
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'Yondi Kavio',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        '\$4.567',
+                        style: TextStyle(color: Colors.grey),
+                      ),
+                    ],
                   ),
                 ),
-                SizedBox(
-                  height: 10,
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Expanded(
+                  child: Container(
+                    height: 180,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        image: AssetImage('assets/maps.png'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
                 ),
-                Text(
-                  'Yondi Kavio',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  '\$4.567',
-                  style: TextStyle(color: Colors.grey),
-                ),
-              ],
-            ),
+              ),
+            ],
           )
         ],
       ),
