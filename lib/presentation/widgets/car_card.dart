@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:rentcar_app/data/models/Car.dart';
+import 'package:rentcar_app/data/models/car.dart';
+import 'package:rentcar_app/presentation/view/car_details_screen.dart';
 
 class CarCard extends StatelessWidget {
   final Car car;
@@ -10,19 +11,22 @@ class CarCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CarDetailsScreen(
+              car: car,
+            ),
+          ),
+        );
+      },
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: Color.fromARGB(255, 232, 232, 243),
           borderRadius: BorderRadius.circular(16),
-          // boxShadow: [
-          //   BoxShadow(
-          //     color: Colors.black12,
-          //     blurRadius: 12,
-          //     spreadRadius: 4,
-          //   )
-          // ],
         ),
         child: Column(
           children: [

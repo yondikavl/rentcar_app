@@ -49,20 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  // static const FirebaseOptions android = FirebaseOptions(
-  //   apiKey: 'API KEY',
-  //   appId: 'APP ID',
-  //   messagingSenderId: '961519639955',
-  //   projectId: 'rentcar-app-fdd11',
-  //   storageBucket: 'rentcar-app-fdd11.appspot.com',
-  // );
 
-  // static const FirebaseOptions ios = FirebaseOptions(
-  //   apiKey: 'API_KEY',
-  //   appId: 'APP ID',
-  //   messagingSenderId: '961519639955',
-  //   projectId: 'rentcar_app',
-  //   storageBucket: 'rentcar_app',
-  //   iosBundleId: '-',
-  // );
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'API KEY',
+    appId: 'APP ID',
+    messagingSenderId: '961519639955',
+    projectId: 'rentcar-app-fdd11',
+    storageBucket: 'rentcar-app-fdd11.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'API_KEY',
+    appId: 'APP ID',
+    messagingSenderId: '961519639955',
+    projectId: 'rentcar_app',
+    storageBucket: 'rentcar_app',
+    iosBundleId: '-',
+  );
 }
