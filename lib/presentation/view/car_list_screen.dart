@@ -33,7 +33,7 @@ class CarListScreen extends StatelessWidget {
         title: const Text('Pilih mobil'),
         centerTitle: true,
         backgroundColor: Colors.white,
-        foregroundColor: Color(0xFF2E3192),
+        automaticallyImplyLeading: false,
       ),
       body: ListView.builder(
         itemCount: cars.length,
