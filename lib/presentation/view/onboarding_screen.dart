@@ -26,7 +26,7 @@ class OnboardingScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Jelajahi dunia, \nMobil Pilihan Terbaik',
                     style: TextStyle(
                       color: Colors.white,
@@ -34,7 +34,7 @@ class OnboardingScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     'Kemudahan Sewa Mobil di Ujung Jari Anda',
                     style: TextStyle(
@@ -42,7 +42,7 @@ class OnboardingScreen extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   SizedBox(
                     width: 320,
                     height: 54,
@@ -59,7 +59,7 @@ class OnboardingScreen extends StatelessWidget {
                         foregroundColor: Colors.black,
                         backgroundColor: Colors.white,
                       ),
-                      child: Text(
+                      child: const Text(
                         'Ayo mulai',
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold),

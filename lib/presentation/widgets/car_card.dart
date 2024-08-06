@@ -22,10 +22,10 @@ class CarCard extends StatelessWidget {
         );
       },
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-        padding: EdgeInsets.all(20),
+        margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: Color.fromARGB(255, 232, 232, 243),
+          color: const Color.fromARGB(255, 232, 232, 243),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
@@ -36,9 +36,9 @@ class CarCard extends StatelessWidget {
             ),
             Text(
               car.model,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -62,7 +62,7 @@ class CarCard extends StatelessWidget {
                 ),
                 Text(
                   '\$${car.pricePerHour.toStringAsFixed(2)}/h',
-                  style: TextStyle(fontSize: 16),
+                  style: const TextStyle(fontSize: 16),
                 )
               ],
             )

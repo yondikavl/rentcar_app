@@ -49,7 +49,6 @@ class DefaultFirebaseOptions {
     }
   }
 
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'API KEY',
     appId: 'APP ID',

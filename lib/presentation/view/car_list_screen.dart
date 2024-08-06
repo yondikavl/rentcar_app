@@ -24,11 +24,14 @@ class CarListScreen extends StatelessWidget {
     Car(model: 'Jazz RS', distance: 650, fuelCapacity: 42, pricePerHour: 35),
   ];
 
+  CarListScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pilih mobil'),
+        title: const Text('Pilih mobil'),
+        centerTitle: true,
         backgroundColor: Colors.white,
         foregroundColor: Color(0xFF2E3192),
       ),

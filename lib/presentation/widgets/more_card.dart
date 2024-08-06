@@ -9,9 +9,9 @@ class MoreCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: Color(0xFF2E3192),
+        color: const Color(0xFF2E3192),
         borderRadius: BorderRadius.circular(18),
       ),
       child: Row(
@@ -22,7 +22,7 @@ class MoreCard extends StatelessWidget {
             children: [
               Text(
                 car.model,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -30,41 +30,41 @@ class MoreCard extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.directions_car,
                 color: Colors.white,
                 size: 16,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 5,
               ),
               Text(
                 '> ${car.distance} km',
-                style: TextStyle(color: Colors.white, fontSize: 14),
+                style: const TextStyle(color: Colors.white, fontSize: 14),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              Icon(
+              const Icon(
                 Icons.battery_full,
                 color: Colors.white,
                 size: 16,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 5,
               ),
               Text(
                 car.fuelCapacity.toString(),
-                style: TextStyle(color: Colors.white, fontSize: 14),
+                style: const TextStyle(color: Colors.white, fontSize: 14),
               ),
             ],
           ),
-          Icon(
+          const Icon(
             Icons.arrow_forward_ios,
             color: Colors.white,
             size: 24,

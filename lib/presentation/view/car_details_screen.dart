@@ -12,13 +12,16 @@ class CarDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
+        title: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Icon(Icons.info_outline),
             Text(' Informasi'),
           ],
         ),
+        centerTitle:
+            true, // Menambahkan ini juga akan membantu memastikan judul di tengah
       ),
       body: Column(
         children: [
@@ -29,7 +32,7 @@ class CarDetailsScreen extends StatelessWidget {
                 fuelCapacity: car.fuelCapacity,
                 pricePerHour: car.pricePerHour),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
@@ -38,12 +41,12 @@ class CarDetailsScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.all(20),
+                    padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
                       color: Color(0xFF2E3192),
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
                         CircleAvatar(
                           radius: 40,
@@ -56,28 +59,34 @@ class CarDetailsScreen extends StatelessWidget {
                         ),
                         Text(
                           'Yondi Kavio',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.white),
                         ),
                         Text(
                           '\$4.567',
-                          style: TextStyle(color: Colors.grey),
+                          style: TextStyle(color: Colors.white70),
                         ),
                       ],
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Expanded(
                   child: Container(
-                    height: 180,
+                    height: 170,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: AssetImage('assets/maps.png'),
                         fit: BoxFit.cover,
                       ),
+                      border: Border.all(
+                          color: Colors.black26,
+                          width: 2,
+                          style: BorderStyle.solid,
+                          strokeAlign: BorderSide.strokeAlignInside),
                     ),
                   ),
                 ),
@@ -95,7 +104,7 @@ class CarDetailsScreen extends StatelessWidget {
                       fuelCapacity: car.fuelCapacity + 100,
                       pricePerHour: car.pricePerHour + 10),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 MoreCard(
@@ -105,7 +114,7 @@ class CarDetailsScreen extends StatelessWidget {
                       fuelCapacity: car.fuelCapacity + 200,
                       pricePerHour: car.pricePerHour + 20),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 MoreCard(
