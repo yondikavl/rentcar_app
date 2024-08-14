@@ -12,16 +12,20 @@ class MapsDetailsScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue.shade900,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.white,
+          ),
           onPressed: () => Navigator.pop(context),
         ),
       ),
       body: Stack(
         children: [
           FlutterMap(
-            options: MapOptions(center: LatLng(51, -0.10), zoom: 15),
-            layers: [
-              TileLayerOptions(
+            options:
+                MapOptions(initialCenter: LatLng(51, -0.10), initialZoom: 15),
+            children: [
+              TileLayer(
                 urlTemplate:
                     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 subdomains: ['a', 'b', 'c'],
